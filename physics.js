@@ -24,7 +24,6 @@ const Physics = (entities, { touches, time, dispatch }) => {
         if (entities[`ObstacleTop${index}`].body.bounds.max.x <= 50 && !entities[`ObstacleTop${index}`].point) {
             entities[`ObstacleTop${index}`].point = true
             dispatch({ type: 'new_point' })
-
         }
 
 
